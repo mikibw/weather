@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WHPopUpController">
+            <connections>
+                <outlet property="messageLabel" destination="Szn-cQ-K33" id="Fa2-dY-a12"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-zw-cPv">
+                    <rect key="frame" x="80" y="307" width="254" height="282"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-fz-cHr" customClass="WHGrandientButton">
+                            <rect key="frame" x="26" y="206" width="202" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="pJS-0c-hh4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="知道了"/>
+                            <connections>
+                                <action selector="confirm" destination="-1" eventType="touchUpInside" id="YCs-f2-AVl"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szn-cQ-K33">
+                            <rect key="frame" x="22" y="40" width="210" height="140"/>
+                            <string key="text">触发措施：“临时号按号牌尾号数字限行，机动车车尾号为英文字母的按0号管理，本市核发号牌的纯电动小客车不受工作日高峰时段区域限行措施限制，警车、消防车、救护车、环卫车等非民用车辆不受上述限制，外埠车辆工作日7时至9时、17时至20时禁止进五环（含，没有进京证禁止进5环（不含）</string>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Szn-cQ-K33" firstAttribute="top" secondItem="4MO-zw-cPv" secondAttribute="top" constant="40" id="3ay-5f-TQT"/>
+                        <constraint firstAttribute="bottom" secondItem="9gp-fz-cHr" secondAttribute="bottom" constant="30" id="HaZ-8M-CsU"/>
+                        <constraint firstAttribute="trailing" secondItem="Szn-cQ-K33" secondAttribute="trailing" constant="22" id="HnU-Pd-btk"/>
+                        <constraint firstAttribute="width" constant="254" id="i3Z-Qw-oBD"/>
+                        <constraint firstItem="9gp-fz-cHr" firstAttribute="top" secondItem="Szn-cQ-K33" secondAttribute="bottom" constant="26" id="lst-hE-KLM"/>
+                        <constraint firstItem="9gp-fz-cHr" firstAttribute="leading" secondItem="4MO-zw-cPv" secondAttribute="leading" constant="26" id="wKt-vP-1UO"/>
+                        <constraint firstAttribute="trailing" secondItem="9gp-fz-cHr" secondAttribute="trailing" constant="26" id="xRO-jS-tE9"/>
+                        <constraint firstItem="Szn-cQ-K33" firstAttribute="leading" secondItem="4MO-zw-cPv" secondAttribute="leading" constant="22" id="yka-FY-JLI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4MO-zw-cPv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FcH-au-zVL"/>
+                <constraint firstItem="4MO-zw-cPv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T1X-Vn-2UX"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="110.49107142857143"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WHMeteDisasterWarningViewController">
+            <connections>
+                <outlet property="descLabel" destination="WBv-VE-sMn" id="sop-ce-Mno"/>
+                <outlet property="descView" destination="Jjf-1i-tP1" id="PAm-1M-HFz"/>
+                <outlet property="disasterDateLabel" destination="rGS-OX-8Ms" id="P9X-0s-xHF"/>
+                <outlet property="disasterLevelLabel" destination="f9K-JS-V8Z" id="zYr-EU-txd"/>
+                <outlet property="disasterTypeImageView" destination="sbo-iO-fn9" id="OUu-cR-ogW"/>
+                <outlet property="disasterTypeLabel" destination="RZy-Uv-Xuw" id="LIy-X5-wKg"/>
+                <outlet property="disasterView" destination="DXy-e7-E40" id="bXj-KJ-2Qd"/>
+                <outlet property="emptyView" destination="umX-af-cMh" id="cxs-ir-1i7"/>
+                <outlet property="nextButton" destination="nVs-72-tuX" id="67m-6v-wss"/>
+                <outlet property="previousButton" destination="KLg-Ho-nEb" id="ZGd-rr-jx1"/>
+                <outlet property="titleLabel" destination="wfz-AN-q0s" id="WWI-Fn-t0L"/>
+                <outlet property="unlockButton" destination="OkP-jK-avZ" id="set-lA-uwg"/>
+                <outlet property="unlockView" destination="js8-Wy-sKD" id="bf8-Cn-x23"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="560"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="x1t-Uv-qmH">
+                    <rect key="frame" x="20" y="15.999999999999998" width="121" height="25.333333333333329"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_yujing" translatesAutoresizingMaskIntoConstraints="NO" id="AS0-zb-BFf">
+                            <rect key="frame" x="0.0" y="0.0" width="26" height="25.333333333333332"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="气象灾害预警" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlr-oL-rI1">
+                            <rect key="frame" x="29" y="0.0" width="92" height="25.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fGs-XK-9Vn">
+                    <rect key="frame" x="274" y="14.666666666666664" width="120" height="28"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLg-Ho-nEb">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="28"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <state key="normal" title="&lt;上一个">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-72-tuX">
+                            <rect key="frame" x="72" y="0.0" width="48" height="28"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <state key="normal" title="下一个&gt;">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-Df-Thv" userLabel="line">
+                    <rect key="frame" x="20" y="53.333333333333336" width="374" height="1"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LPS-Vn-yrL"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-Xv-O1h">
+                    <rect key="frame" x="32" y="79.333333333333343" width="350" height="460.66666666666663"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-e7-E40">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="195.66666666666666"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四川省乐山市气象台发布大雾黄色预警" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-AN-q0s">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-Rs-KoI">
+                                    <rect key="frame" x="0.0" y="38" width="350" height="66"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="f6p-rv-k80">
+                                            <rect key="frame" x="82" y="6" width="186" height="54"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_kongqi" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-iO-fn9">
+                                                    <rect key="frame" x="0.0" y="1.6666666666666714" width="53" height="51"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b8P-LY-WCM">
+                                                    <rect key="frame" x="65" y="0.0" width="121" height="54"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="V2V-mV-Sf9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="121" height="15.333333333333334"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="灾害类型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC4-Yn-6Iv">
+                                                                    <rect key="frame" x="0.0" y="2.0000000000000009" width="56.333333333333336" height="13.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大雾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZy-Uv-Xuw">
+                                                                    <rect key="frame" x="56.33333333333335" y="0.0" width="64.666666666666686" height="15.666666666666666"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="ZWQ-rh-fS4">
+                                                            <rect key="frame" x="0.0" y="20.333333333333329" width="121" height="15.333333333333336"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="灾害等级：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMC-rS-paf">
+                                                                    <rect key="frame" x="0.0" y="2.0000000000000009" width="56.333333333333336" height="13.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="橙色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9K-JS-V8Z">
+                                                                    <rect key="frame" x="56.33333333333335" y="0.0" width="64.666666666666686" height="15.666666666666666"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="07:02:00   2020-09-23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-OX-8Ms">
+                                                            <rect key="frame" x="0.0" y="40.666666666666671" width="121" height="13.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="f6p-rv-k80" firstAttribute="centerY" secondItem="J1J-Rs-KoI" secondAttribute="centerY" id="9Xe-NB-kUz"/>
+                                        <constraint firstItem="f6p-rv-k80" firstAttribute="centerX" secondItem="J1J-Rs-KoI" secondAttribute="centerX" id="V9n-iX-XEW"/>
+                                        <constraint firstAttribute="height" constant="66" id="flz-sK-1MK"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjf-1i-tP1">
+                                    <rect key="frame" x="0.0" y="124" width="350" height="71.666666666666686"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我县出现能见度小于500米，大于等于200米的浓雾并持续至10小时左右，请注意交通安全，减少户外活动，预防浓雾带来的不利影响" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBv-VE-sMn">
+                                            <rect key="frame" x="20" y="15.999999999999996" width="310" height="39.666666666666657"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WBv-VE-sMn" secondAttribute="trailing" constant="20" id="C78-wd-4WK"/>
+                                        <constraint firstAttribute="bottom" secondItem="WBv-VE-sMn" secondAttribute="bottom" constant="16" id="K2J-d1-dHS"/>
+                                        <constraint firstItem="WBv-VE-sMn" firstAttribute="top" secondItem="Jjf-1i-tP1" secondAttribute="top" constant="16" id="nkR-YT-SOb"/>
+                                        <constraint firstItem="WBv-VE-sMn" firstAttribute="leading" secondItem="Jjf-1i-tP1" secondAttribute="leading" constant="20" id="qiy-Ou-puk"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umX-af-cMh">
+                            <rect key="frame" x="0.0" y="195.66666666666669" width="350" height="175"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0tm-1z-rzK">
+                                    <rect key="frame" x="60.333333333333329" y="26.666666666666686" width="229.66666666666669" height="122"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_kongzhuangtai" translatesAutoresizingMaskIntoConstraints="NO" id="ATD-gc-VEu">
+                                            <rect key="frame" x="70.666666666666671" y="0.0" width="88.000000000000014" height="88"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无当地的气象预警信息可以提供" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKG-1V-IGb">
+                                            <rect key="frame" x="0.0" y="104" width="229.66666666666666" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="0tm-1z-rzK" firstAttribute="centerX" secondItem="umX-af-cMh" secondAttribute="centerX" id="gnS-MF-uBM"/>
+                                <constraint firstAttribute="height" constant="175" id="oDM-eF-CWa"/>
+                                <constraint firstItem="0tm-1z-rzK" firstAttribute="centerY" secondItem="umX-af-cMh" secondAttribute="centerY" id="rdp-2o-GqP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="js8-Wy-sKD">
+                            <rect key="frame" x="0.0" y="370.66666666666669" width="350" height="90"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看国内权威气象灾害预警" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX5-dV-gJV">
+                                    <rect key="frame" x="0.0" y="0.0" width="183.66666666666666" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="远离、防范身边的气象灾害" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVQ-U6-zgd">
+                                    <rect key="frame" x="0.0" y="24" width="183.66666666666666" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-jK-avZ">
+                                    <rect key="frame" x="0.0" y="54" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.21176470589999999" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="HVh-Qa-Lu8"/>
+                                        <constraint firstAttribute="height" constant="30" id="QJF-Yc-Nf5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="查看更多">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_pic3" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-BT-Suf">
+                                    <rect key="frame" x="221" y="0.0" width="129" height="90"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="yTQ-BT-Suf" secondAttribute="bottom" id="2qm-pr-u6X"/>
+                                <constraint firstItem="VVQ-U6-zgd" firstAttribute="leading" secondItem="qX5-dV-gJV" secondAttribute="leading" id="BbB-IO-BV7"/>
+                                <constraint firstItem="qX5-dV-gJV" firstAttribute="top" secondItem="js8-Wy-sKD" secondAttribute="top" id="TRI-1e-vq5"/>
+                                <constraint firstItem="OkP-jK-avZ" firstAttribute="leading" secondItem="VVQ-U6-zgd" secondAttribute="leading" id="TV7-eM-twi"/>
+                                <constraint firstAttribute="height" constant="90" id="U6u-eP-5QA"/>
+                                <constraint firstItem="VVQ-U6-zgd" firstAttribute="top" secondItem="qX5-dV-gJV" secondAttribute="bottom" constant="6" id="V2P-gT-vSj"/>
+                                <constraint firstItem="qX5-dV-gJV" firstAttribute="leading" secondItem="js8-Wy-sKD" secondAttribute="leading" id="YBg-CP-Wuk"/>
+                                <constraint firstItem="OkP-jK-avZ" firstAttribute="top" secondItem="VVQ-U6-zgd" secondAttribute="bottom" constant="12" id="jb1-Cx-UO5"/>
+                                <constraint firstAttribute="trailing" secondItem="yTQ-BT-Suf" secondAttribute="trailing" id="s2O-YY-noL"/>
+                                <constraint firstItem="yTQ-BT-Suf" firstAttribute="top" secondItem="js8-Wy-sKD" secondAttribute="top" id="tI5-by-J5Z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gDW-Xv-O1h" firstAttribute="top" secondItem="rOL-Df-Thv" secondAttribute="bottom" constant="25" id="21q-qi-SRS"/>
+                <constraint firstItem="rOL-Df-Thv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="2db-ms-RWc"/>
+                <constraint firstAttribute="bottom" secondItem="gDW-Xv-O1h" secondAttribute="bottom" constant="20" id="N2Z-sW-KTq"/>
+                <constraint firstItem="rOL-Df-Thv" firstAttribute="top" secondItem="x1t-Uv-qmH" secondAttribute="bottom" constant="12" id="Pc6-ci-XTL"/>
+                <constraint firstItem="fGs-XK-9Vn" firstAttribute="centerY" secondItem="x1t-Uv-qmH" secondAttribute="centerY" id="STg-kb-9PZ"/>
+                <constraint firstAttribute="trailing" secondItem="rOL-Df-Thv" secondAttribute="trailing" constant="20" id="SeK-1X-EJ0"/>
+                <constraint firstItem="x1t-Uv-qmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="Ufn-eb-DM4"/>
+                <constraint firstAttribute="trailing" secondItem="gDW-Xv-O1h" secondAttribute="trailing" constant="32" id="eHd-6x-5vI"/>
+                <constraint firstItem="x1t-Uv-qmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="n7b-o5-D79"/>
+                <constraint firstAttribute="trailing" secondItem="fGs-XK-9Vn" secondAttribute="trailing" constant="20" id="oJL-ez-lID"/>
+                <constraint firstItem="gDW-Xv-O1h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="oQC-9N-Cvs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="14"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-194.20289855072465" y="-78.260869565217391"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_icon_kongqi" width="53" height="51"/>
+        <image name="home_icon_kongzhuangtai" width="88" height="88"/>
+        <image name="home_icon_yujing" width="26" height="26"/>
+        <image name="home_pic3" width="129" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

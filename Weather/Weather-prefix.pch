@@ -1,0 +1,29 @@
+//
+//  Weather-prefix.pch
+//  Weather
+//
+//  Created by Liang Tang on 2021/3/9.
+//
+
+#ifndef Weather_prefix_h
+#define Weather_prefix_h
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <AFNetworking/AFNetworking.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "WHPositionStorage.h"
+#import "WHSubscribeManager.h"
+
+#import "WHRouter.h"
+#import "WHViewController.h"
+#import "WHNavigationController.h"
+
+#import "WHUtils.h"
+
+#endif /* Weather_prefix_h */

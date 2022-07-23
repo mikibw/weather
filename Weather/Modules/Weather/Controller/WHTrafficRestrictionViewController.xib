@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WHTrafficRestrictionViewController">
+            <connections>
+                <outlet property="dayButton" destination="6Sb-97-ZW8" id="9PV-xd-6fq"/>
+                <outlet property="emptyView" destination="zV3-IU-raT" id="bOb-Pm-nSj"/>
+                <outlet property="penaltyButton" destination="mxu-XP-R8k" id="GYL-MI-gm6"/>
+                <outlet property="platesLabel" destination="xXn-aQ-eXE" id="y5k-kX-JA8"/>
+                <outlet property="platesTopLabel" destination="y3r-B5-UFy" id="CX3-33-Jxe"/>
+                <outlet property="remarksLabel" destination="dRj-7D-gax" id="vE2-WM-CUY"/>
+                <outlet property="restrictionView" destination="QTZ-KN-MZT" id="XUW-IP-D0J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-fm-3pc">
+                    <rect key="frame" x="20" y="20" width="374" height="24"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NS4-Oj-vdf">
+                            <rect key="frame" x="0.0" y="-1" width="93" height="26"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
+                            <state key="normal" title="尾号限行" image="home_icon_xianxing">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-97-ZW8">
+                            <rect key="frame" x="339" y="-2" width="35" height="28"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <state key="normal" title="今天&gt;">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NS4-Oj-vdf" firstAttribute="centerY" secondItem="ke5-fm-3pc" secondAttribute="centerY" id="MPN-bw-j6y"/>
+                        <constraint firstAttribute="trailing" secondItem="6Sb-97-ZW8" secondAttribute="trailing" id="NKI-gU-lO6"/>
+                        <constraint firstItem="6Sb-97-ZW8" firstAttribute="centerY" secondItem="ke5-fm-3pc" secondAttribute="centerY" id="U1Q-GS-2RY"/>
+                        <constraint firstItem="NS4-Oj-vdf" firstAttribute="leading" secondItem="ke5-fm-3pc" secondAttribute="leading" id="ikL-a6-MZt"/>
+                        <constraint firstAttribute="height" constant="24" id="r3K-u3-sFq"/>
+                    </constraints>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXR-C4-UEr">
+                    <rect key="frame" x="20" y="54" width="374" height="1"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ioJ-Qv-L6P"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hd6-3F-VIc">
+                    <rect key="frame" x="20" y="79" width="374" height="253"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTZ-KN-MZT">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="131"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="限行尾号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3r-B5-UFy">
+                                    <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-aQ-eXE">
+                                    <rect key="frame" x="0.0" y="22.999999999999996" width="53.666666666666664" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_pic_car" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-kP-mbN">
+                                    <rect key="frame" x="110" y="6" width="154" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="FA0-Yy-Jmy"/>
+                                        <constraint firstAttribute="width" constant="154" id="jOY-VN-WK7"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="限行区域：五环路以内道路（不包括五环路主路）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRj-7D-gax">
+                                    <rect key="frame" x="0.0" y="82" width="269.66666666666669" height="14"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxu-XP-R8k">
+                                    <rect key="frame" x="0.0" y="106" width="78" height="25"/>
+                                    <color key="backgroundColor" red="0.89411764705882346" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="78" id="ee7-7a-fQI"/>
+                                        <constraint firstAttribute="height" constant="25" id="waY-nH-Twt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                    <state key="normal" title="处罚措施&gt;">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <real key="value" value="12.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="y3r-B5-UFy" firstAttribute="top" secondItem="QTZ-KN-MZT" secondAttribute="top" id="1UF-0d-ykd"/>
+                                <constraint firstItem="xXn-aQ-eXE" firstAttribute="top" secondItem="y3r-B5-UFy" secondAttribute="bottom" constant="5" id="3vO-bJ-oG6"/>
+                                <constraint firstAttribute="bottom" secondItem="mxu-XP-R8k" secondAttribute="bottom" id="67l-Ju-StL"/>
+                                <constraint firstItem="y3r-B5-UFy" firstAttribute="leading" secondItem="QTZ-KN-MZT" secondAttribute="leading" id="FGv-BN-Idf"/>
+                                <constraint firstItem="mxu-XP-R8k" firstAttribute="leading" secondItem="dRj-7D-gax" secondAttribute="leading" id="VNQ-oL-dQn"/>
+                                <constraint firstItem="mxu-XP-R8k" firstAttribute="top" secondItem="dRj-7D-gax" secondAttribute="bottom" constant="10" id="WBz-4B-sZi"/>
+                                <constraint firstItem="JF1-kP-mbN" firstAttribute="centerX" secondItem="QTZ-KN-MZT" secondAttribute="centerX" id="cbq-zt-Jxo"/>
+                                <constraint firstItem="dRj-7D-gax" firstAttribute="top" secondItem="JF1-kP-mbN" secondAttribute="bottom" constant="20" id="coK-fi-9DQ"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dRj-7D-gax" secondAttribute="trailing" id="f2a-Y9-vvR"/>
+                                <constraint firstItem="JF1-kP-mbN" firstAttribute="top" secondItem="QTZ-KN-MZT" secondAttribute="top" constant="6" id="hig-hG-Pic"/>
+                                <constraint firstItem="xXn-aQ-eXE" firstAttribute="leading" secondItem="y3r-B5-UFy" secondAttribute="leading" id="t5k-Z5-0V7"/>
+                                <constraint firstItem="dRj-7D-gax" firstAttribute="leading" secondItem="QTZ-KN-MZT" secondAttribute="leading" id="vsc-Xz-RHM"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV3-IU-raT">
+                            <rect key="frame" x="0.0" y="131" width="374" height="122"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-bn-zmH">
+                                    <rect key="frame" x="72.333333333333329" y="0.0" width="229.66666666666669" height="122"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_whxx_kzt" translatesAutoresizingMaskIntoConstraints="NO" id="qZI-DA-exB">
+                                            <rect key="frame" x="70.666666666666671" y="0.0" width="88.000000000000014" height="88"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您所在的城市没有搜寻到相关政策" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1Z-Df-ppY">
+                                            <rect key="frame" x="0.0" y="104" width="229.66666666666666" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="XSb-bn-zmH" firstAttribute="centerX" secondItem="zV3-IU-raT" secondAttribute="centerX" id="YeA-G6-Qke"/>
+                                <constraint firstAttribute="height" constant="122" id="ts8-5W-vZS"/>
+                                <constraint firstItem="XSb-bn-zmH" firstAttribute="centerY" secondItem="zV3-IU-raT" secondAttribute="centerY" id="xNb-ps-lUe"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ke5-fm-3pc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BI9-Zf-kon"/>
+                <constraint firstAttribute="bottom" secondItem="Hd6-3F-VIc" secondAttribute="bottom" constant="24" id="H38-Tr-P15"/>
+                <constraint firstItem="lXR-C4-UEr" firstAttribute="top" secondItem="ke5-fm-3pc" secondAttribute="bottom" constant="10" id="PI0-bW-DoZ"/>
+                <constraint firstItem="Hd6-3F-VIc" firstAttribute="top" secondItem="lXR-C4-UEr" secondAttribute="bottom" constant="24" id="WG1-2q-yef"/>
+                <constraint firstItem="lXR-C4-UEr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="XbG-n3-MiI"/>
+                <constraint firstAttribute="trailing" secondItem="Hd6-3F-VIc" secondAttribute="trailing" constant="20" id="YEl-UW-60R"/>
+                <constraint firstItem="ke5-fm-3pc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dpR-HW-B67"/>
+                <constraint firstAttribute="trailing" secondItem="ke5-fm-3pc" secondAttribute="trailing" constant="20" id="ehC-7G-TQM"/>
+                <constraint firstItem="Hd6-3F-VIc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qsq-xG-7ui"/>
+                <constraint firstAttribute="trailing" secondItem="lXR-C4-UEr" secondAttribute="trailing" constant="20" id="wfS-Q6-JIN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="14"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="140.57971014492756" y="198.91304347826087"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_icon_whxx_kzt" width="88" height="88"/>
+        <image name="home_icon_xianxing" width="26" height="26"/>
+        <image name="home_pic_car" width="154" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

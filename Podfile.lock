@@ -1,0 +1,60 @@
+PODS:
+  - Ads-CN (3.4.3.9):
+    - Ads-CN/BUAdSDK (= 3.4.3.9)
+  - Ads-CN/BUAdSDK (3.4.3.9):
+    - Ads-CN/BUFoundation
+    - Ads-CN/Domestic
+  - Ads-CN/BUFoundation (3.4.3.9)
+  - Ads-CN/Domestic (3.4.3.9)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
+  - MJExtension (3.2.4)
+  - ReactiveObjC (3.1.1)
+  - SVProgressHUD (2.2.5)
+  - UICKeyChainStore (2.2.1)
+
+DEPENDENCIES:
+  - Ads-CN
+  - AFNetworking
+  - Masonry
+  - MJExtension
+  - ReactiveObjC
+  - SVProgressHUD
+  - UICKeyChainStore
+
+SPEC REPOS:
+  trunk:
+    - Ads-CN
+    - AFNetworking
+    - Masonry
+    - MJExtension
+    - ReactiveObjC
+    - SVProgressHUD
+    - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  Ads-CN: 89e08bd1cc922e608e176b93983b8ca09a92caf8
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UICKeyChainStore: ba3bff2c762b12db1e516f395c837dd25298b05e
+
+PODFILE CHECKSUM: 3427b1e6b7cc21b6903321964bd3b23d1661ecfa
+
+COCOAPODS: 1.10.0

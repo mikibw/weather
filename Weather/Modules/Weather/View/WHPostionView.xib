@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WHPostionView">
+            <connections>
+                <outlet property="button" destination="exw-5m-ORW" id="gd8-RB-gdB"/>
+                <outlet property="locLabel" destination="nWx-M4-vfg" id="r94-sj-RwF"/>
+                <outlet property="timeLabel" destination="i2d-HO-Wmi" id="JQg-by-gdx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ds-hNC">
+                    <rect key="frame" x="137.33333333333334" y="7" width="100.33333333333334" height="30"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D1s-OL-aho">
+                            <rect key="frame" x="43.666666666666657" y="0.0" width="13" height="18"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWx-M4-vfg">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_searching" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-Zu-cO1">
+                                    <rect key="frame" x="0.0" y="0.0" width="13" height="18"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周六 2月26 3：08PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2d-HO-Wmi">
+                            <rect key="frame" x="0.0" y="18" width="100.33333333333333" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exw-5m-ORW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <connections>
+                        <action selector="search" destination="-1" eventType="touchUpInside" id="i0w-Dw-OsK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Z3Z-ds-hNC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6MI-2J-bzu"/>
+                <constraint firstAttribute="bottom" secondItem="exw-5m-ORW" secondAttribute="bottom" id="6bL-yR-Sxc"/>
+                <constraint firstItem="exw-5m-ORW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G7t-dc-j0E"/>
+                <constraint firstItem="exw-5m-ORW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ob9-Lp-TfQ"/>
+                <constraint firstAttribute="trailing" secondItem="exw-5m-ORW" secondAttribute="trailing" id="dPx-7y-3uu"/>
+                <constraint firstItem="Z3Z-ds-hNC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oAL-gZ-T1d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-138.40579710144928" y="212.94642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_searching" width="13" height="13"/>
+    </resources>
+</document>
